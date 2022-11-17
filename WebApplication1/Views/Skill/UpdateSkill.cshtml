@@ -1,0 +1,22 @@
+﻿@model WebApplication1.Models.TblSkill
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Yetenek Güncelleme sayfası</h2>
+
+<form method="post">
+
+<label>Yetenek ID</label>
+
+<input type="text" name="SkillID" value="@Model.SkillID" class="form-control" />
+<br />
+
+<label>Yetenek Başlığı</label>
+<input type="text" name="Title" value="@Model.Title" class="form-control" />
+<br />
+<input type="text" name="Value" value="@Model.Value" class="form-control" />
+<br />
+<button class="btn btn-info">Yeteneği Ekle</button>
+</form>
